@@ -34,7 +34,6 @@ def correct_spelling(text, corrections):
     corrected_words = [corrections.get(word, word) for word in words]
     return ' '.join(corrected_words)
 
-
 def is_unimportant_sentence(text: str) -> bool:
     if not isinstance(text, str):
         return True
@@ -49,7 +48,6 @@ def is_unimportant_sentence(text: str) -> bool:
         if any(phrase == txt or phrase in txt for phrase in unimportant_phrases):
             return True
     return False
-
 
 def is_question_like(text: str) -> bool:
     if pd.isna(text) or not isinstance(text, str):
