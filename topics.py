@@ -3,8 +3,7 @@ import pandas as pd
 import numpy as np
 from collections import Counter, defaultdict
 
-from clustering import semantic_clustering_auto
-from utils import embed_texts, get_main_keyword, clean_main_keyword, extract_top_keywords_from_texts
+from clustering import semantic_clustering_auto, embed_texts, get_main_keyword, clean_main_keyword, extract_top_keywords_from_texts
 from config import CENTROID_SIMILARITY_THRESHOLD, MIN_EXAMPLES_FOR_CENTROID, MIN_CLUSTER_SHOW, stop_words_id
 
 # Aturan Topik Keyword (rule-based) 
