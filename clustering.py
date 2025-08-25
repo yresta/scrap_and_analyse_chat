@@ -2,6 +2,11 @@ import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.cluster import KMeans
 from sklearn.metrics.pairwise import cosine_similarity
+import re
+from collections import defaultdict
+from sklearn.metrics import silhouette_score
+import nltk
+from nltk.corpus import stopwords
 
 # === Embedding & helper ===
 def extract_top_keywords_from_texts(texts, top_n=2, max_features=1000):
