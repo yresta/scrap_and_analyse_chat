@@ -1,5 +1,6 @@
 import re
 import pandas as pd
+from nltk.tokenize import word_tokenize
 
 def clean_text_for_clustering(text: str) -> str:
     if not isinstance(text, str):
